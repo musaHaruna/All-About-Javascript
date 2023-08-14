@@ -1,166 +1,171 @@
-/*
+let firstNumber = 4
+let secondNumber = 3
+let sum = firstNumber + secondNumber
+
+console.log(firstNumber)
+firstNumber = 5
+console.log(firstNumber)
+firstNumber = 7
+console.log(firstNumber)
+
 ////////////////////////////////////
 // Linking a JavaScript File
-let js = "amazing";
-console.log(40 + 8 + 23 - 10);
+let js = '                   amazing'
+console.log(40 + 8 + 23 - 10)
 
 ////////////////////////////////////
 // Values and Variables
-console.log("James");
-console.log(23);
+console.log('(James)')
+console.log(23)
 
-let firstName = "Musa";
+let Name = 'Musa'
 
-console.log(firstName);
-console.log(firstName);
-console.log(firstName);
+console.log(Name)
+console.log(Name)
+console.log(Name)
 
 // Variable name conventions
-let musa_haruna = "JM";
-let $function = 27;
+let musa_haruna = 'JM'
 
-let person = "James";
-let PI = 3.1415;
+let person = 'James'
+let PI = 3.1415
 
-let myFirstJob = "Coder";
-let myCurrentJob = "Teacher";
+let myFirstJob = 'Coder'
 
-let job1 = "programmer";
-let job2 = "teacher";
+let myCurrentJob = 'Teacher'
 
-console.log(myFirstJob);
+let job1 = 'programmer'
+let job2 = 'teacher'
+
+console.log(myFirstJob)
 
 ////////////////////////////////////
 // Data Types
-let javascriptIsFun = true;
-console.log(javascriptIsFun);
+let javascriptIsFun = true
+console.log(javascriptIsFun)
 
 // console.log(typeof true);
-console.log(typeof javascriptIsFun);
+console.log(typeof javascriptIsFun)
 // console.log(typeof 23);
 // console.log(typeof 'Musa');
 
-javascriptIsFun = 'YES!';
-console.log(typeof javascriptIsFun);
+javascriptIsFun = 'YES!'
+console.log(typeof javascriptIsFun)
 
-let year;
-console.log(year);
-console.log(typeof year);
+let year
+console.log(year)
+console.log(typeof year)
 
-year = 1991;
-console.log(typeof year);
+year = 1991
+console.log(typeof year)
 
-console.log(typeof null);
+console.log(typeof null)
 
 ////////////////////////////////////
 // let, const and var
-let age = 30;
-age = 31;
+let age = 30
+age = 31
 
-const birthYear = 1991;
-birthYear = 1990;
-const job;
+const birthYear = 1991
 
-var job = 'programmer';
-job = 'teacher'
-
-lastName = 'Haruna';
-console.log(lastName);
+lastName = 'Haruna'
+console.log(lastName)
 
 ////////////////////////////////////
 // Basic Operators
 // Math operators
-const now = 2037;
-const ageMusa = now - 1991;
-const ageSarah = now - 2018;
-console.log(ageMusa, ageSarah);
-
-console.log(ageMusa * 2, ageJonas / 10, 2 ** 3);
+const now = 2037
+const ageMusa = now - 1991
+const ageSarah = now - 2018
+console.log(ageMusa)
+console.log(ageSarah / 10)
+console.log(ageMusa * 2, ageSarah / 10, 2 ** 3)
 // 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
 
-const firstName = 'Musa';
-const lastName = 'Haruna';
-console.log(firstName + ' ' + lastName);
-
-// Assignment operators
-let x = 10 + 5; // 15
-x += 10; // x = x + 10 = 25
-x *= 4; // x = x * 4 = 100
-x++; // x = x + 1
-x--;
-x--;
-console.log(x);
+// Assignment operator
+x += 10 // x = x + 10 = 25
+x *= 4 // x = x * 4 = 100
+x++ // x = x + 1
+x--
+x--
+console.log(x)
 
 // Comparison operators
-console.log(ageJonas > ageSarah); // >, <, >=, <=
-console.log(ageSarah >= 18);
+console.log(ageJonas > ageSarah) // >, <, >=, <=
+console.log(ageSarah >= 18)
 
-const isFullAge = ageSarah >= 18;
+const isFullAge = ageSarah >= 18
 
-console.log(now - 1991 > now - 2018);
+console.log(now - 1991 > now - 2018)
 
 ////////////////////////////////////
 // Operator Precedence
-const now = 2037;
-const ageJonas = now - 1991;
-const ageSarah = now - 2018;
+const ageNow = 2037
+const ageJonas = ageNow - 1991
 
-console.log(now - 1991 > now - 2018);
+console.log(now - 1991 > now - 2018)
 
-let x, y;
-x = y = 25 - 10 - 5; // x = y = 10, x = 10
-console.log(x, y);
+let x, y
+x = y = 25 - 10 - 5 // x = y = 10, x = 10
+console.log(x, y)
 
-const averageAge = (ageJonas + ageSarah) / 2;
-console.log(ageJonas, ageSarah, averageAge);
+const averageAge = (ageJonas + ageSarah) / 2
+console.log(ageJonas, ageSarah, averageAge)
 
 ////////////////////////////////////
 // Strings and Template Literals
-const firstName = 'Musa';
-const job = 'teacher';
-const birthYear = 1991;
-const year = 2037;
+const yourName = 'Musa'
+const yourjob = 'teacher'
+const yourbirthYear = 1991
+const futureyear = 2037
 
-const musa = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
-console.log(musa);
+const musa =
+  "I'm " +
+  firstName +
+  ', a ' +
+  (futureyear - yourbirthYear) +
+  ' year old ' +
+  job +
+  '!'
+console.log(musa)
 
-const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
-console.log(jonasNew);
+const jonasNew = `I'm ${firstName}, a ${
+  futureyear - yourbirthYear
+} year old ${job}!`
+console.log(jonasNew)
 
-console.log(`Just a regular string...`);
+console.log(`Just a regular string...`)
 
-console.log('String with \n\
+console.log(
+  'String with \n\
 multiple \n\
-lines');
+lines'
+)
 
 console.log(`String
 multiple
-lines`);
-
+lines`)
 
 ////////////////////////////////////
 // Taking Decisions: if / else Statements
-const age = 15;
+const yourAge = 15
 
 if (age >= 18) {
-  console.log('Sarah can start driving license 🚗');
+  console.log('Sarah can start driving license 🚗')
 } else {
-  const yearsLeft = 18 - age;
-  console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
+  const yearsLeft = 18 - age
+  console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`)
 }
 
-const birthYear = 2012;
+const formerYear = 2012
 
-let century;
-if (birthYear <= 2000) {
-  century = 20;
+let century
+if (formerYear <= 2000) {
+  century = 20
 } else {
-  century = 21;
+  century = 21
 }
-console.log(century);
-*/
-
-
+console.log(century)
 
 /*
 
@@ -259,7 +264,6 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 }
 */
 
-
 /*
 
 // BONUS 1
@@ -350,4 +354,3 @@ console.log(drink2);
 
 console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`);
 */
-
